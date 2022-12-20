@@ -1,6 +1,6 @@
 package Day34_abstractionInterface.transpotationTask;
 
-public class Transportation {
+public abstract class Transportation {
 
     private  final String make, model;
     private String color;
@@ -41,5 +41,23 @@ public class Transportation {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public abstract  void tranportPeople();
+
+    public  void start(){
+        System.out.println("Shut off the engine");
+
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
 }
