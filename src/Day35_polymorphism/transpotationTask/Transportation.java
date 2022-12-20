@@ -1,4 +1,4 @@
-package Day34_abstractionInterface.transpotationTask;
+package Day35_polymorphism.transpotationTask;
 
 public abstract class Transportation {
 
