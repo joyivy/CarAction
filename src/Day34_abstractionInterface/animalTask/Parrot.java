@@ -1,8 +1,8 @@
 package Day34_abstractionInterface.animalTask;
 
-public class Perrot extends Animal implements Playable, Flyable{
+public class Parrot extends Animal implements Playable, Flyable{
 
-    public Perrot(String name, String breed, char gender, int age, String size, String color) {
+    public Parrot(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
 
