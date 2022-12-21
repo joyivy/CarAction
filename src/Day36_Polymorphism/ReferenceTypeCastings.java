@@ -17,9 +17,13 @@ public class ReferenceTypeCastings {
         animal1.eat();
         animal1.drink();
         animal1.sleep();
-       // ((Dog)animal1).bark(); one time use only
-        Dog dog1 = (Dog) animal1; //useing multiple times
-        dog1.bark();
+        //((Dog)animal1).bark(); //one time use only
+        //Dog dog1 = (Dog) animal1; //useing multiple times
+        //dog1.bark();
+
+        //  ( (Cat)animal1).scratch(); // Dog can not be converted to Cat, because there is not "IS A" relationship between dog and cat
+
+
     }
 
 
