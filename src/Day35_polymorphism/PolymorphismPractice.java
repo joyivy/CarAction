@@ -1,8 +1,7 @@
 package Day35_polymorphism;
 
-import Day34_abstractionInterface.animalTask.Animal;
-import Day34_abstractionInterface.animalTask.Eagle;
-import Day34_abstractionInterface.animalTask.Tiger;
+import Day34_abstractionInterface.animalTask.*;
+import Day35_polymorphism.transpotationTask.*;
 
 public class PolymorphismPractice {
     public static void main(String[] args) {
@@ -17,5 +16,64 @@ public class PolymorphismPractice {
         animal.eat();
         animal.sleep();
         animal.drink();
+
+       Flyable obj1 = new Eagle("John", "American Eagle", 'M', 3, "Small", "Black & White");;
+        //obj1.eat();
+        // obj1.drink();
+        // obj1.sleep();
+        obj1.fly();
+        System.out.println(obj1.canFly);
+
+
+        Lion lion = null;
+
+        Parrot parrot = null;
+
+        Shark shark = null;
+
+        Dolphin dolphin = null;
+
+        Eagle eagle = null;
+
+        Duck duck = null;
+
+        Dog dog = null;
+
+        Cat cat = null;
+
+        CydeoCar cydeoCar = null;
+
+        Flyable[] birds = { parrot, eagle, duck};
+
+        Swimmable[] fishes = {dolphin, shark, duck, cydeoCar};
+
+        Playable[] frinedlyAnimals = {dog,cat,duck};
+
+        boolean isAnimal = dog instanceof Animal;
+
+
+        System.out.println(isAnimal);
+
+        System.out.println("------------------------------------------------");
+
+        Car car = new Tesla("Tesla", "Model Y", "White", 2020, 55000);
+
+        boolean isTesla = car instanceof Tesla;
+        boolean isAudi = car instanceof Audi;
+
+        boolean isElectricCar = car instanceof Electric;
+        boolean hasAutoPark = car instanceof AutoPark;
+        boolean hasAutoPilot = car instanceof AutoPilot;
+
+        System.out.println( "Is tesle = "+ isTesla);
+        System.out.println("Is Audi = "+ isAudi);
+        System.out.println("Is Tesla Electric car = "+ isElectricCar);
+        System.out.println("Is Tesla Auto Park = "+ hasAutoPark);
+        System.out.println("Is Tesla has auto pilot = "+ hasAutoPilot);
+
+
+
+
+
     }
 }
