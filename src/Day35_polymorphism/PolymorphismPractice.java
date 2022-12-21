@@ -1,6 +1,7 @@
 package Day35_polymorphism;
 
 import Day34_abstractionInterface.animalTask.Animal;
+import Day34_abstractionInterface.animalTask.Eagle;
 import Day34_abstractionInterface.animalTask.Tiger;
 
 public class PolymorphismPractice {
@@ -10,5 +11,11 @@ public class PolymorphismPractice {
         tiger.drink();
         tiger.sleep();
        // tiger.hunt();
+
+        Animal animal = new Eagle("John", "American Eagle", 'M', 3, "Small", "Black & White");
+        // animal.fly();
+        animal.eat();
+        animal.sleep();
+        animal.drink();
     }
 }
