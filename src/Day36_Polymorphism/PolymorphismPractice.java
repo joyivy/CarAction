@@ -12,6 +12,8 @@ public class PolymorphismPractice {
 
     public static void main(String[] args) {
 
+
+
         //   IPhone phone = new Phone("Iphone 11 Pro", "Large", "Black", 900);
 
         //Phone phone =  new Samsung("Galaxy S19", "Medium", "Pink", 700);
