@@ -3,6 +3,10 @@ package Day36_Polymorphism;
 import Day29_inhertitance.animalTask.Animal;
 import Day29_inhertitance.animalTask.Cat;
 import Day29_inhertitance.animalTask.Dog;
+import Day33_abstraction.EmployeeTask.Developer;
+import Day33_abstraction.EmployeeTask.Employee;
+import day30_inheritance.phoneTask.Nokia;
+import day30_inheritance.phoneTask.Phone;
 
 public class ReferenceTypeCastings {
     public static void main(String[] args) {
@@ -22,6 +26,24 @@ public class ReferenceTypeCastings {
         //dog1.bark();
 
         //  ( (Cat)animal1).scratch(); // Dog can not be converted to Cat, because there is not "IS A" relationship between dog and cat
+        System.out.println("-------------------------------------------------------------");
+
+        Phone phone = new Nokia("XR20", "Small", "Blue", 350);
+
+       phone.call(911);
+        phone.text(123456);
+        ((Nokia) phone).selfDefense();
+        System.out.println("-------------------------------------------------------------");
+        Employee employee = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+        employee.work();
+
+        System.out.println(((Developer) employee).getProgrammingLanguage());
+
+
+
+
+        //    ( (IPhone)phone ).faceTime(123456); // Nokia can not be converted to Iphone, because there is not "IS A" relationship between Nokia and Iphone
 
 
     }
