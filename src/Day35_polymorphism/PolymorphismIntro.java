@@ -7,6 +7,7 @@ import Day32_finalKeyword.methodOverriting.Honda;
 import Day32_finalKeyword.methodOverriting.Tesla;
 import Day33_abstraction.EmployeeTask.Developer;
 import Day33_abstraction.EmployeeTask.Driver;
+import Day33_abstraction.EmployeeTask.Employee;
 import Day33_abstraction.EmployeeTask.Tester;
 import Day34_abstractionInterface.animalTask.*;
 
@@ -73,6 +74,15 @@ public class PolymorphismIntro {
 
 
         Object[] objects = {str, n, r, d, circle, honda, audi, tesla, developer, driver, tester};
+        Employee obj = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+
+        obj.work();
         System.out.println(Arrays.toString(objects));
+
+        System.out.println("++++++++++++++++++++++++++++++++");
+
+
+
     }
 }
