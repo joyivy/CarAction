@@ -10,6 +10,14 @@ public class TestPizzaObject {
         System.out.println(pizza1==pizza2);
 
         System.out.println(pizza1.equals(pizza2));
+
+        Object obj = new Pizza('L',4,3); //upcasting
+
+        boolean r = obj.equals(pizza2);
+        System.out.println(r);
+
+        double total = ((Pizza)obj).calcCost();
+        System.out.println(total);
     }
 }
 
