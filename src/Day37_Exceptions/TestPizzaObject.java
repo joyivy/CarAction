@@ -1,5 +1,7 @@
 package Day37_Exceptions;
 
+import Day36_Polymorphism.Circle;
+
 public class TestPizzaObject {
     public static void main(String[] args) {
 
@@ -18,6 +20,8 @@ public class TestPizzaObject {
 
         double total = ((Pizza)obj).calcCost();
         System.out.println(total);
+
+        double area = ( (Circle)obj ).area();
     }
 }
 
