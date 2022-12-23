@@ -12,5 +12,34 @@ public class TryCatchBlock2 {
             e.printStackTrace(); // display full details of the exception after the exucution of program
         }
         System.out.println("Program1 Ended.");
+
+        System.out.println("-------------------------------------------------------");
+
+        System.out.println("Program2 started");
+        try{
+            System.out.println(9/0);
+        }catch (RuntimeException e){
+            e.printStackTrace();
+
+        }
+
+
+        System.out.println("Program1 ended");
+
+        System.out.println("-------------------------------------------------------");
+
+        System.out.println("Program3 started");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Program3 ended");
+
     }
+
 }
+
+
